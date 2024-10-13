@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aatrunaa Restaurant - Feedback Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <img class="img1" src="./aatrunaa logo pdf-3.png" alt="Aatrunaa Restaurant logo" width="150px">
+        <h2>Aatrunaa Restaurant - Feedback Form</h2>
+        <form action="/submit_feedback" method="post"> <!-- Pointing to Node.js endpoint -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="rating">How was the dish?</label>
+            <select id="rating" name="rating" required>
+                <option value="">Select an option</option>
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Poor">Poor</option>
+            </select>
+            
+            <label for="feedback">Any Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Your Feedback"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
